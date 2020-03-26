@@ -1,0 +1,38 @@
+### Login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "superadmin@gmail.com",
+    "password": "superadmin" 
+}
+
+
+### create employee
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjEsImVtYWlsIjoic3VwZXJhZG1pbkBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJzdXBlcmFkbWluIiwibGFzdG5hbWUiOiJzdXBlcmFkbWluIiwiZ2VuZGVyIjoibSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaXNBY3RpdmUiOjF9LCJpYXQiOjE1ODUyMTg0MDUsImV4cCI6MTU4NTIyMjAwNX0.Ie1DNTzou6Q8RJTnwoeAFwa4XlOrO7rz206aT8pizJA
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin", 
+    "firstname": "admin",
+    "lastname": "admin",
+    "gender": "m",
+    "role": "superadmin"
+}
+
+###
+PATCH  http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjEsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiYWRtaW4iLCJsYXN0bmFtZSI6ImFkbWluIiwiZ2VuZGVyIjoibSIsInJvbGUiOiJhZG1pbiJ9LCJpYXQiOjE1ODUyMTU5OTIsImV4cCI6MTU4NTIxOTU5Mn0.M2apmh13q4sgejP8LJl025njF-F2bb4Z8uPANLn6ocM
+
+{
+    "id": 1,
+    "email": "superadmin@gmail.com",
+    "password": "superadmin", 
+    "firstname": "superadmin",
+    "lastname": "superadmin",
+    "gender": "m",
+    "role": "superadmin"
+}
